@@ -10,11 +10,20 @@ function App() {
     });
   };
 
+  const closingText = (theIndexSent) => {
+    // theInput.filter((item, index) => index !== theIndexSent);
+    setTheInput((prevInput) => {
+      const updatedItems = prevInput.filter(
+        (item, index) => index !== theIndexSent
+      );
+      return updatedItems;
+    });
+  };
   return (
     <div className="task-container">
       <h2>What's the Plan for Today ?</h2>
       <AddTask onSendTask={sendtaskHandler}></AddTask>
-      <AddToList inputList={theInput}></AddToList>
+      <AddToList onClosing={closingText} inputList={theInput}></AddToList>
     </div>
   );
 }

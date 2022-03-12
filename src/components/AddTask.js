@@ -11,11 +11,13 @@ const AddTask = (props) => {
   const formSubmitHandler = (event) => {
     event.preventDefault();
     props.onSendTask(textInput);
+    setTextInput("");
   };
 
   return (
     <form onSubmit={formSubmitHandler}>
       <input
+        value={textInput}
         className="input-contain"
         type="text"
         placeholder="Add a todo"

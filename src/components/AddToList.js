@@ -14,6 +14,10 @@ const AddToList = (props) => {
     "#08E8DE",
   ];
 
+  const closeHandler = (sentIndex) => {
+    props.onClosing(sentIndex);
+  };
+
   return (
     <div>
       <ul>
@@ -26,7 +30,7 @@ const AddToList = (props) => {
               key={index}
             >
               {item}
-              <button>X</button>
+              <button onClick={() => closeHandler(index)}>X</button>
             </li>
           );
         })}
