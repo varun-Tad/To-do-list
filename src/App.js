@@ -11,7 +11,6 @@ function App() {
   };
 
   const closingText = (theIndexSent) => {
-    // theInput.filter((item, index) => index !== theIndexSent);
     setTheInput((prevInput) => {
       const updatedItems = prevInput.filter(
         (item, index) => index !== theIndexSent
