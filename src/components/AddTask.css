@@ -1,0 +1,29 @@
+.input-contain {
+  background: transparent;
+  outline: none;
+  color: white;
+  height: 3rem;
+  width: 20rem;
+  padding: 14px 32px 14px 16px;
+  border: 2px solid #5d0cff;
+  border-radius: 4px 0 0 4px;
+  font-size: 1.2rem;
+}
+
+::placeholder {
+  color: #e2e2e2;
+}
+
+.submit-btn {
+  height: 3rem;
+  width: 7rem;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(48, 16, 255, 1) 0%,
+    rgba(100, 115, 255, 1) 100%
+  );
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
